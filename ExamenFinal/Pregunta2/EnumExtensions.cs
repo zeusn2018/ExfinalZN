@@ -39,6 +39,7 @@
                 case ProcessorFrequency.Fast:
                     return "2.4GHz";
                 case ProcessorFrequency.Turbo:
+                    return "3.5GHz";
                 default:
                     return "3.2GHz";
             }

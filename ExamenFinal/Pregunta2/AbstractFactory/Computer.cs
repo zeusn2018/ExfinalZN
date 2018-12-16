@@ -1,11 +1,11 @@
 ﻿namespace ExamenParcial
 {
     public abstract class Computer
-    {
-        private Finish finish;
-        private Storage storage;
-        private Processor processor;
-        private Memory memory;
+    {        
+        public abstract Processor processor();
+        public abstract Memory memory();       
+        public abstract Storage storage();
+        public abstract Finish finish();
 
         //public Computer(Finish finish, Storage storage, Processor processor, Memory memory)
         //{

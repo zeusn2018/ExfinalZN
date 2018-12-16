@@ -47,35 +47,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pregunta2\AbstractFinish.cs" />
-    <Compile Include="Pregunta2\AbstractMemory.cs" />
-    <Compile Include="Pregunta2\AbstractProcessor.cs" />
+    <Compile Include="Pregunta2\Abstract\AbstractFinish.cs" />
+    <Compile Include="Pregunta2\Abstract\AbstractMemory.cs" />
+    <Compile Include="Pregunta2\Abstract\AbstractProcessor.cs" />
+    <Compile Include="Pregunta2\Abstract\AbstractStorage.cs" />
     <Compile Include="Pregunta2\Abstract\Computer.cs" />
     <Compile Include="Pregunta2\AdvancedMemory.cs" />
     <Compile Include="Pregunta2\BasicMemory.cs" />
     <Compile Include="Pregunta2\BasicProcessor.cs" />
     <Compile Include="Pregunta2\BlackFinish.cs" />
-    <Compile Include="Pregunta2\Computer.cs" />
     <Compile Include="Pregunta2\EnumExtensions.cs" />
     <Compile Include="Pregunta2\FastProcessor.cs" />
-    <Compile Include="Pregunta2\Finish.cs" />
+    <Compile Include="Pregunta2\AbstractProduct\Finish.cs" />
     <Compile Include="Pregunta2\HighEndProcessor.cs" />
     <Compile Include="Pregunta2\HugeFlash.cs" />
     <Compile Include="Pregunta2\HugeHardDisk.cs" />
     <Compile Include="Pregunta2\MediumFlash.cs" />
     <Compile Include="Pregunta2\MediumHardDisk.cs" />
-    <Compile Include="Pregunta2\Memory.cs" />
+    <Compile Include="Pregunta2\AbstractProduct\Memory.cs" />
     <Compile Include="Pregunta2\MemorySize.cs" />
     <Compile Include="Pregunta2\MemorySpeed.cs" />
     <Compile Include="Pregunta2\MemoryType.cs" />
-    <Compile Include="Pregunta2\Processor.cs" />
+    <Compile Include="Pregunta2\AbstractProduct\Processor.cs" />
     <Compile Include="Pregunta2\ProcessorFrequency.cs" />
     <Compile Include="Pregunta2\ProcessorType.cs" />
     <Compile Include="Pregunta2\Client2.cs" />
     <Compile Include="Pregunta2\ProMemory.cs" />
     <Compile Include="Pregunta2\SmallFlash.cs" />
     <Compile Include="Pregunta2\SmallHardDisk.cs" />
-    <Compile Include="Pregunta2\Storage.cs" />
+    <Compile Include="Pregunta2\AbstractProduct\Storage.cs" />
     <Compile Include="Pregunta2\StorageSize.cs" />
     <Compile Include="Pregunta2\StorageType.cs" />
     <Compile Include="Pregunta2\TurboProcessor.cs" />
@@ -116,6 +116,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pregunta2\Client\" />
+    <Folder Include="Pregunta2\ConcretFactory\" />
+    <Folder Include="Pregunta2\Product\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
