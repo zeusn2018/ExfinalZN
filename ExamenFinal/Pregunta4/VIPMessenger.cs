@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ExamenFinal
+namespace ExamenFinal.Pregunta4
 {
-    class VIPMessenger : Messaging
+    class VIPMessenger : IMessaging
     {
         public void Send(String Message)
         {

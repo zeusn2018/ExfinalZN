@@ -87,8 +87,10 @@
     <Compile Include="Pregunta3\HasDuplicateValuesLinealStrategy.cs" />
     <Compile Include="Pregunta3\IStrategy.cs" />
     <Compile Include="Pregunta3\Strategy.cs" />
+    <Compile Include="Pregunta4\AbstractMessenger.cs" />
     <Compile Include="Pregunta4\Client4.cs" />
     <Compile Include="Pregunta4\EZMessenger.cs" />
+    <Compile Include="Pregunta4\IMessaging.cs" />
     <Compile Include="Pregunta4\Messaging.cs" />
     <Compile Include="Pregunta4\QuickMessenger.cs" />
     <Compile Include="Pregunta4\SecureEZMessenger.cs" />

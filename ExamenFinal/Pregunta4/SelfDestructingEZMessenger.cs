@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExamenFinal
+namespace ExamenFinal.Pregunta4
 {
-    class SelfDestructingEZMessenger : EZMessenger
+    class SelfDestructingEZMessenger : AbstractMessenger
     {
-        public void Send(String Message)
+        public override void Send(String Message)
         {
             Message = "☠" + Message + "☠";
-            base.Send(Message);
+            MessageSender.Send(Message);
+            //base.Send(Message);
         }
     }
 }

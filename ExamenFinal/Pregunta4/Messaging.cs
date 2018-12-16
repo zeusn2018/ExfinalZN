@@ -5,5 +5,6 @@ namespace ExamenFinal
     interface Messaging
     {
         void Send(String Message);
+        
     }
 }

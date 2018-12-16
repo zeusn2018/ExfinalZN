@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ExamenFinal
+namespace ExamenFinal.Pregunta4
 {
-    class SecureVIPMessenger : VIPMessenger
+    class SecureVIPMessenger : AbstractMessenger
     {
         private String Encrypt(String Message)
         {
@@ -10,10 +10,10 @@ namespace ExamenFinal
             return Message;
         }
 
-        public void Send(String Message)
+        public override void Send(String Message)
         {
             Message = Encrypt(Message);
-            base.Send(Message);
+            MessageSender.Send(Message);
         }
     }
 }

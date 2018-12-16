@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ExamenFinal
+namespace ExamenFinal.Pregunta4
 {
-    class EZMessenger : Messaging
+    class EZMessenger : IMessaging
     {
         public void Send(string Message)
         {

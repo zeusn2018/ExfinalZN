@@ -1,13 +1,14 @@
 ﻿using System;
 
-namespace ExamenFinal
+namespace ExamenFinal.Pregunta4
 {
-    class SelfDestructingVIPMessenger : VIPMessenger
+    class SelfDestructingVIPMessenger : AbstractMessenger
     {
-        public void Send(String Message)
+        public override void Send(String Message)
         {
             Message = "☠" + Message + "☠";
-            base.Send(Message);
+            MessageSender.Send(Message);
+            //base.Send(Message);
         }
     }
 }
