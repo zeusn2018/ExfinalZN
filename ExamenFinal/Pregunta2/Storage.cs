@@ -1,29 +1,36 @@
 ﻿namespace ExamenParcial
 {
-    public class Storage
+    public abstract class Storage
     {
         protected StorageType type;
         protected StorageSize size;
         protected float price;
 
-        public StorageType getType()
-        {
-            return type;
-        }
+        public abstract StorageType getType();
+        public abstract StorageSize getSize();
+        public abstract float getPrice();
+        public abstract override string ToString();
+        public abstract string getDescription();
 
-        public StorageSize getSize()
-        {
-            return size;
-        }
+        //public StorageType getType()
+        //{
+        //    return type;
+        //}
 
-        public float getPrice()
-        {
-            return price;
-        }
+        //public StorageSize getSize()
+        //{
+        //    return size;
+        //}
 
-        public override string ToString()
-        {
-            return this.type.ToString() + " | " + EnumExtensions.GetStorageSize(this.size) + " | " + this.price;
-        }
+        //public float getPrice()
+        //{
+        //    return price;
+        //}
+
+        //public override string ToString()
+        //{
+        //    return this.type.ToString() + " | " + EnumExtensions.GetStorageSize(this.size) + " | " + this.price;
+        //}
+
     }
 }

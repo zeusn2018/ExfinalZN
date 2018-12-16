@@ -2,30 +2,35 @@
 
 namespace ExamenParcial
 {
-    public class Finish
+    public abstract class Finish
     {
         protected Color color;
         protected float price;
         protected string description;
 
-        public Color getColor()
-        {
-            return color;
-        }
+        public abstract Color getColor();
+        public abstract float getPrice();
+        public abstract string getDescription();
+        public override abstract string ToString();
 
-        public float getPrice()
-        {
-            return price;
-        }
+        //public Color getColor()
+        //{
+        //    return color;
+        //}
 
-        public string getDescription()
-        {
-            return description;
-        }
+        //public float getPrice()
+        //{
+        //    return price;
+        //}
 
-        public override string ToString()
-        {
-            return this.description + " | " + this.price;
-        }
+        //public string getDescription()
+        //{
+        //    return description;
+        //}
+
+        //public override string ToString()
+        //{
+        //    return this.description + " | " + this.price;
+        //}
     }
 }

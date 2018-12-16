@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>ExamenFinal</RootNamespace>
     <AssemblyName>ExamenFinal</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pregunta2\AbstractFinish.cs" />
+    <Compile Include="Pregunta2\AbstractMemory.cs" />
+    <Compile Include="Pregunta2\AbstractProcessor.cs" />
+    <Compile Include="Pregunta2\Abstract\Computer.cs" />
     <Compile Include="Pregunta2\AdvancedMemory.cs" />
     <Compile Include="Pregunta2\BasicMemory.cs" />
     <Compile Include="Pregunta2\BasicProcessor.cs" />
