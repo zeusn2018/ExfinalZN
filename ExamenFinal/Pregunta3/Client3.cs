@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExamenFinal
+namespace ExamenFinal.Pregunta3
 {
     class Client3
     {
@@ -8,20 +8,24 @@ namespace ExamenFinal
         {
             int[] numbers = { 1, 5, 7, 78, 9, 2, 24, 38, 78, 91, 96, 4, 6, 17, 101, 24, 38, 47, 37, 148, 2, 589 };
             bool HasDuplicates;
+            IStrategy HasDuplicateStrategy;
             foreach (ComplexityType complexityType in Enum.GetValues(typeof(ComplexityType)))
             {
                 switch (complexityType)
                 {
                     case ComplexityType.Lineal:
-                        HasDuplicates = HasDuplicateValuesLineal(numbers);
+                        HasDuplicateStrategy = new HasDuplicateValuesLinealStrategy();
+                        HasDuplicates = HasDuplicateStrategy.HasDuplicateValues(numbers);
                         Console.WriteLine(ComplexityType.Lineal.ToString() + " - HasDuplicates: " + HasDuplicates);
                         break;
                     case ComplexityType.Cuadratic:
-                        HasDuplicates = HasDuplicateValuesCuadratic(numbers);
+                        HasDuplicateStrategy = new HasDuplicateValuesCuadraticStrategy();
+                        HasDuplicates = HasDuplicateStrategy.HasDuplicateValues(numbers);
                         Console.WriteLine(ComplexityType.Cuadratic.ToString() + " - HasDuplicates: " + HasDuplicates);
                         break;
                     case ComplexityType.Exponential:
-                        HasDuplicates = HasDuplicateValuesExponential(numbers);
+                        HasDuplicateStrategy = new HasDuplicateValuesExponentialStrategy();
+                        HasDuplicates = HasDuplicateStrategy.HasDuplicateValues(numbers);
                         Console.WriteLine(ComplexityType.Exponential.ToString() + " - HasDuplicates: " + HasDuplicates);
                         break;
                 }
@@ -29,20 +33,20 @@ namespace ExamenFinal
             Console.ReadLine();
         }
 
-        public static bool HasDuplicateValuesCuadratic(int[] numbers)
-        {
-            return true;
-        }
+        //public static bool HasDuplicateValuesCuadratic(int[] numbers)
+        //{
+        //    return true;
+        //}
 
-        public static bool HasDuplicateValuesLineal(int[] numbers)
-        {
-            return true;
-        }
+        //public static bool HasDuplicateValuesLineal(int[] numbers)
+        //{
+        //    return true;
+        //}
 
-        public static bool HasDuplicateValuesExponential(int[] numbers)
-        {
-            return true;
-        }
+        //public static bool HasDuplicateValuesExponential(int[] numbers)
+        //{
+        //    return true;
+        //}
 
     }
 }

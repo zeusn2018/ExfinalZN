@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamenFinal.Pregunta3
 {
-    class HasDuplicateValuesExponentialStrategy
+    class HasDuplicateValuesExponentialStrategy : IStrategy
     {
         public bool HasDuplicateValues(int[] numbers)
         {
