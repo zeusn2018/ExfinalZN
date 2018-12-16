@@ -6,11 +6,26 @@ using System.Threading.Tasks;
 
 namespace ExamenFinal.Pregunta5
 {
-    class ExtraBreadSandwich: Sandwich
+    public class ExtraBreadSandwich: Sandwich
     {
-        public String Make()
+        public ExtraBreadSandwich()
         {
-            return "Extra Bread";
+            this.description = "ExtraBreadSandwich";
+        }
+
+        public override double calculateCost()
+        {
+            return 7.00;
+        }
+
+        public override string getDescription()
+        {
+            return this.description;
+        }
+
+        public override string Make()
+        {
+            return this.description;
         }
     }
 }

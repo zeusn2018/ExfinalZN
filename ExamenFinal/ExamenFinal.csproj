@@ -100,11 +100,17 @@
     <Compile Include="Pregunta4\SelfDestructingQuickMessenger.cs" />
     <Compile Include="Pregunta4\SelfDestructingVIPMessenger.cs" />
     <Compile Include="Pregunta4\VIPMessenger.cs" />
+    <Compile Include="Pregunta5\Bacon.cs" />
+    <Compile Include="Pregunta5\Beef.cs" />
+    <Compile Include="Pregunta5\Chicken.cs" />
     <Compile Include="Pregunta5\Client5.cs" />
+    <Compile Include="Pregunta5\Egg.cs" />
     <Compile Include="Pregunta5\ExtraBreadSandwich.cs" />
     <Compile Include="Pregunta5\LargeBreadSandwich.cs" />
     <Compile Include="Pregunta5\Sandwich.cs" />
+    <Compile Include="Pregunta5\SandwichDecorator.cs" />
     <Compile Include="Pregunta5\SmallBreadSandwich.cs" />
+    <Compile Include="Pregunta5\Turkey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

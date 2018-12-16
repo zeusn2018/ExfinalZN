@@ -2,8 +2,14 @@
 
 namespace ExamenFinal
 {
-    public interface Sandwich
+    public abstract class Sandwich
     {
-        String Make();
+        public String description;
+
+        public abstract String Make();
+
+        public abstract String getDescription();
+
+        public abstract double calculateCost();
     }
 }

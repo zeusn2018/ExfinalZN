@@ -1,12 +1,27 @@
 ﻿using System;
 
-namespace ExamenFinal
+namespace ExamenFinal.Pregunta5
 {
-    class LargeBreadSandwich : Sandwich
+    public class LargeBreadSandwich : Sandwich
     {
-        public String Make()
+        public LargeBreadSandwich()
         {
-            return "Large Bread";
+            this.description = "LargeBreadSandwich";
+        }
+
+        public override double calculateCost()
+        {
+            return 5.00;
+        }
+
+        public override string getDescription()
+        {
+            return this.description;
+        }
+
+        public override string Make()
+        {
+            return this.description;
         }
     }
 }
