@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77902E8A-6F68-4ECA-B04D-56D2B940C3D9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ExamenFinal</RootNamespace>
+    <AssemblyName>ExamenFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ExamenParcial.Client2</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pregunta2\AdvancedMemory.cs" />
+    <Compile Include="Pregunta2\BasicMemory.cs" />
+    <Compile Include="Pregunta2\BasicProcessor.cs" />
+    <Compile Include="Pregunta2\BlackFinish.cs" />
+    <Compile Include="Pregunta2\Computer.cs" />
+    <Compile Include="Pregunta2\EnumExtensions.cs" />
+    <Compile Include="Pregunta2\FastProcessor.cs" />
+    <Compile Include="Pregunta2\Finish.cs" />
+    <Compile Include="Pregunta2\HighEndProcessor.cs" />
+    <Compile Include="Pregunta2\HugeFlash.cs" />
+    <Compile Include="Pregunta2\HugeHardDisk.cs" />
+    <Compile Include="Pregunta2\MediumFlash.cs" />
+    <Compile Include="Pregunta2\MediumHardDisk.cs" />
+    <Compile Include="Pregunta2\Memory.cs" />
+    <Compile Include="Pregunta2\MemorySize.cs" />
+    <Compile Include="Pregunta2\MemorySpeed.cs" />
+    <Compile Include="Pregunta2\MemoryType.cs" />
+    <Compile Include="Pregunta2\Processor.cs" />
+    <Compile Include="Pregunta2\ProcessorFrequency.cs" />
+    <Compile Include="Pregunta2\ProcessorType.cs" />
+    <Compile Include="Pregunta2\Client2.cs" />
+    <Compile Include="Pregunta2\ProMemory.cs" />
+    <Compile Include="Pregunta2\SmallFlash.cs" />
+    <Compile Include="Pregunta2\SmallHardDisk.cs" />
+    <Compile Include="Pregunta2\Storage.cs" />
+    <Compile Include="Pregunta2\StorageSize.cs" />
+    <Compile Include="Pregunta2\StorageType.cs" />
+    <Compile Include="Pregunta2\TurboProcessor.cs" />
+    <Compile Include="Pregunta2\WhiteFinish.cs" />
+    <Compile Include="Pregunta3\Client3.cs" />
+    <Compile Include="Pregunta3\ComplexityType.cs" />
+    <Compile Include="Pregunta4\Client4.cs" />
+    <Compile Include="Pregunta4\EZMessenger.cs" />
+    <Compile Include="Pregunta4\Messaging.cs" />
+    <Compile Include="Pregunta4\QuickMessenger.cs" />
+    <Compile Include="Pregunta4\SecureEZMessenger.cs" />
+    <Compile Include="Pregunta4\SecureQuickMessenger.cs" />
+    <Compile Include="Pregunta4\SecureVIPMessenger.cs" />
+    <Compile Include="Pregunta4\SelfDestructingEZMessenger.cs" />
+    <Compile Include="Pregunta4\SelfDestructingQuickMessenger.cs" />
+    <Compile Include="Pregunta4\SelfDestructingVIPMessenger.cs" />
+    <Compile Include="Pregunta4\VIPMessenger.cs" />
+    <Compile Include="Pregunta5\Client5.cs" />
+    <Compile Include="Pregunta5\LargeBreadSandwich.cs" />
+    <Compile Include="Pregunta5\Sandwich.cs" />
+    <Compile Include="Pregunta5\SmallBreadSandwich.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
