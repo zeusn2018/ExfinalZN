@@ -117,6 +117,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Pregunta1\" />
     <Folder Include="Pregunta2\Client\" />
     <Folder Include="Pregunta2\ConcretFactory\" />
     <Folder Include="Pregunta2\Product\" />
