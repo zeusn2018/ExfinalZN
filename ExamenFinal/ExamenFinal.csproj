@@ -82,6 +82,9 @@
     <Compile Include="Pregunta2\WhiteFinish.cs" />
     <Compile Include="Pregunta3\Client3.cs" />
     <Compile Include="Pregunta3\ComplexityType.cs" />
+    <Compile Include="Pregunta3\HasDuplicateValuesCuadraticStrategy.cs" />
+    <Compile Include="Pregunta3\HasDuplicateValuesExponentialStrategy.cs" />
+    <Compile Include="Pregunta3\HasDuplicateValuesLinealStrategy.cs" />
     <Compile Include="Pregunta3\IStrategy.cs" />
     <Compile Include="Pregunta3\Strategy.cs" />
     <Compile Include="Pregunta4\Client4.cs" />
