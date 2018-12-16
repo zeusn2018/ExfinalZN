@@ -101,6 +101,7 @@
     <Compile Include="Pregunta4\SelfDestructingVIPMessenger.cs" />
     <Compile Include="Pregunta4\VIPMessenger.cs" />
     <Compile Include="Pregunta5\Client5.cs" />
+    <Compile Include="Pregunta5\ExtraBreadSandwich.cs" />
     <Compile Include="Pregunta5\LargeBreadSandwich.cs" />
     <Compile Include="Pregunta5\Sandwich.cs" />
     <Compile Include="Pregunta5\SmallBreadSandwich.cs" />

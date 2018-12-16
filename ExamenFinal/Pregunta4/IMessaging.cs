@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamenFinal.Pregunta4
 {
-    interface IMessaging
+    public interface IMessaging
     {
         void Send(String Message);
     }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExamenFinal
+namespace ExamenFinal.Pregunta5
 {
     class Client5
     {
@@ -8,6 +8,11 @@ namespace ExamenFinal
         {
             SmallBreadSandwich smallBreadSandwich = new SmallBreadSandwich();
             Console.WriteLine(smallBreadSandwich.Make());
+            LargeBreadSandwich largeBreadSandwich = new LargeBreadSandwich();
+            Console.WriteLine(smallBreadSandwich.Make());
+            ExtraBreadSandwich extraBreadSandwich = new ExtraBreadSandwich();
+            Console.WriteLine(smallBreadSandwich.Make());
+
 
             Console.ReadLine();
         }

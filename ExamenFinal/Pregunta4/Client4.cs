@@ -65,7 +65,7 @@ namespace ExamenFinal.Pregunta4
 
             Console.WriteLine("\n");
             Console.WriteLine("SelfDestructingEZMessenger.....");
-            //AbstractMessenger desquickmessenger = new SelfDestructingQuickMessenger();
+            AbstractMessenger desquickmessenger = new SelfDestructingQuickMessenger();
 
             desquickmessenger.MessageSender = ez;
             desquickmessenger.Send(Message);
@@ -76,18 +76,20 @@ namespace ExamenFinal.Pregunta4
             desquickmessenger.MessageSender = vip;
             desquickmessenger.Send(Message);
 
-            //Console.WriteLine("\n");
-            //Console.WriteLine("SelfDestructingVIPMessenger.....");
-            //AbstractMessenger desvipmessenger = new SelfDestructingVIPMessenger();
+            Console.WriteLine("\n");
+            Console.WriteLine("SelfDestructingVIPMessenger.....");
+            AbstractMessenger desvipmessenger = new SelfDestructingVIPMessenger();
 
-            //desvipmessenger.MessageSender = ez;
-            //desvipmessenger.Send(Message);
+            desvipmessenger.MessageSender = ez;
+            desvipmessenger.Send(Message);
 
-            //desvipmessenger.MessageSender = quick;
-            //desvipmessenger.Send(Message);
+            desvipmessenger.MessageSender = quick;
+            desvipmessenger.Send(Message);
 
-            //desvipmessenger.MessageSender = vip;
-            //desvipmessenger.Send(Message);
+            desvipmessenger.MessageSender = vip;
+            desvipmessenger.Send(Message);
+
+
 
             //QuickMessenger quickMessenger = new QuickMessenger();
             //quickMessenger.Send(Message);

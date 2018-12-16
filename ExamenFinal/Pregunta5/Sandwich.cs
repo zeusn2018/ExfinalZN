@@ -2,7 +2,7 @@
 
 namespace ExamenFinal
 {
-    interface Sandwich
+    public interface Sandwich
     {
         String Make();
     }
